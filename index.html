@@ -12,6 +12,13 @@
         background-color: #FFFCF4;
         color: #4F6071;
       }
+      .bg1 {
+          background-image: url('images/IMG_1238.jpg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 1000px 360px;
+           /*100% auto;*/
+      }
       .color1 {
         background-color: #CCC;
       }
@@ -29,8 +36,9 @@
         top: 150px;
       }
       .img-me {
-        border: 3px solid white;
+        border: 2px solid white;
         float: left;
+        width: 150px;
         height: 200px;
       }
       .header-text {
@@ -84,19 +92,20 @@
     </script>
   </head>
   <body>
-    <div id='header'>
+    <div id='header' class="bg1">
       <div id='header-inner'>
         <img src='images/thumbnail_IMG_3184.jpg' class='img-circle img-me'>
         <div class='header-text'>
           <div class='header-text-name'>
-            Xiaoyuan Guo
+            <font color="Black">Xiaoyuan Guo</font>
+            
           </div>
           <div class='header-text-email'>
-            xiaoyuan.guo at emory dot edu 
+            <font color="Black">xiaoyuan.guo at emory dot edu</font> 
           </div>
           <div>
-            <a href="https://github.com/XiaoyuanGuo">[GitHub]</a>
-            <a href="https://scholar.google.com/citations?user=BODfAFkAAAAJ&hl=en">[Google Scholar]</a>
+            <a href="https://github.com/XiaoyuanGuo"><font color="black">[GitHub]</font> </a>
+            <a href="https://scholar.google.com/citations?user=BODfAFkAAAAJ&hl=en"><font color="black">[Google Scholar]</font> </a>
           </div>
         </div>
       </div>
@@ -105,23 +114,21 @@
     <div class='container'>
       <div class='col-xs-10 col-md-offset-1'>
         <div class='row'>
-          <h1>About</h1>
+          <h1><font color="Black">About</font></h1>
+           <div class='vspace'>
+             I'm currently a third-year PhD at Emory University supervisied by
+            <a href="http://www.bmi.emory.edu/ashishsharma" target='_blank'>Ashish Sharma</a>.
+          </div>
           <div class='vspace'>
-            I'm broadly interested in computer vision and medical image processing.
+            I'm broadly interested in <font color="Black">computer vision</font> and <font color="Black"> medical image processing</font>.
             My research involves object detection, object segmentation, and medical image analysis(whole-slide microscopy image and radiology image)
             using deep neural networks.
           </div>
-          <div class='vspace'>
-            I am currently a third-year PhD at Emory University.
-          </div>
-          <div class='vspace'>
-            I'm currently supervisied by
-            <a href="http://www.bmi.emory.edu/ashishsharma" target='_blank'>Ashish Sharma</a>.
-          </div>
+         
           
         </div>
         <div class='row'>
-          <h1>Publications</h1>
+          <h1><font color="black">Publications </font></h1>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
@@ -166,116 +173,114 @@
           </div>
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='images/sgan_thumb.png'>
+              <img class='paper-image' src='images/3-1.png'>
             </div>
             <div class='col-xs-9'>
               <div class='paper-title'>
-                Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks
+                A unified framework for multi-modal isolated gesture recognition
               </div>
               <div class='paper-authors'>
-                Agrim Gupta, <u>Justin Johnson</u>, Li Fei-Fei, Silvio Savarese, Alexandre Alahi
+                Jiali Duan, Jun Wan, Shuai Zhou,<u>Xiaoyuan Guo</u>, Stan Z Li
               </div>
               <div>
-                CVPR 2018
+                ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)2017   
               </div>
               <div>
-                <a href="https://arxiv.org/abs/1803.10892">[arXiv]</a>
-                <a href="https://github.com/agrimgupta92/sgan">[code]</a>
+                <a href="http://www.cbsr.ia.ac.cn/users/jwan/papers/TOMM2017_isogesture.pdf">[paper]</a>
+                <!-- <a href="https://github.com/agrimgupta92/sgan">[code]</a> -->
               </div>
             </div>
           </div>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='images/iep_thumb.png'>
+              <img class='paper-image' src='images/4-1.png'>
             </div>
             <div class='col-xs-9'>
               <div class='paper-title'>
-                Inferring and Executing Programs for Visual Reasoning
+                PortraitGAN for Flexible Portrait Manipulation
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Bharath Hariharan, Laurens van der Maaten, <br>
-                Judy Hoffman, Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick
+                Jiali Duan, <u>Xiaoyuan Guo </u>, Yuhang Song, Chao Yang, C-C Jay Kuo
               </div>
               <div>
-                ICCV 2017 (Oral)
+                Arxiv Preprint
               </div>
               <div>
-                <a href='iep'>[project]</a>
-                <a href='https://github.com/facebookresearch/clevr-iep'>[code]</a>
-                <a href='https://arxiv.org/abs/1705.03633'>[arXiv]</a>
-                <a href='https://www.youtube.com/watch?v=3pCLma2FqSk'>[video]</a>
+                <!-- <a href='iep'>[project]</a> -->
+                <!-- <a href='https://github.com/facebookresearch/clevr-iep'>[code]</a> -->
+                <a href='https://arxiv.org/abs/1807.01826'>[arXiv]</a>
+                <!-- <a href='https://www.youtube.com/watch?v=3pCLma2FqSk'>[video]</a> -->
               </div>
             </div>
           </div>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='images/stable-style.png'>
+              <img class='paper-image' src='images/5-1.jpg'>
             </div>
             <div class='col-xs-9'>
               <div class='paper-title'>
-                Characterizing and Improving Stability in Neural Style Transfer
+                A survey on algorithms of hole filling in 3D surface reconstruction
               </div>
               <div class='paper-authors'>
-                Agrim Gupta, <u>Justin Johnson</u>, Alexandre Alahi, Li Fei-Fei
+                <u>Xiaoyuan Guo</u>, Jun Xiao, Ying Wang
               </div>
               <div>
-                ICCV 2017
+                The Visual Computer, 2016
               </div>
               <div>
-                <a href='https://arxiv.org/abs/1705.02092'>[arXiv]</a>
+                <a href='https://link.springer.com/article/10.1007/s00371-016-1316-y'>[arXiv]</a>
               </div>
             </div>
           </div>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='papers/clevr/teaser_crop.jpg'>
+              <img class='paper-image' src='images/6-1.png'>
             </div>
             <div class='col-xs-9'>
               <div class='paper-title'>
-                CLEVR: A Diagnostic Dataset for <br> Compositional Language and Elementary Visual Reasoning
+                Multi-modality fusion based on consensus-voting and 3d convolution for isolated gesture recognition
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Bharath Hariharan, Laurens van der Maaten, <br>
-                Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick
+                Jiali Duan, Shuai Zhou, Jun Wan, <u> Xiaoyuan Guo</u>, Stan Z Li
               </div>
               <div>
-                CVPR 2017
+                ArXiv Preprint 
               </div>
               <div>
-                <a href='clevr'>[project]</a>
-                <a href='https://github.com/facebookresearch/clevr-dataset-gen'>[code]</a>
-                <a href='https://arxiv.org/abs/1612.06890'>[arXiv]</a>
+                <!-- <a href='clevr'>[project]</a> -->
+                <!-- <a href='https://github.com/facebookresearch/clevr-dataset-gen'>[code]</a> -->
+                <a href='https://arxiv.org/pdf/1611.06689v1.pdf'>[arXiv]</a>
               </div>
             </div>
           </div>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='images/im2p_thumb.png'>
+              <img class='paper-image' src='images/7-1.png'>
             </div>
             <div class='col-xs-9'>
               <div class='paper-title'>
-                A Hierarchical Approach for Generating Descriptive Image Paragraphs                
+                Face detection by aggregating visible components              
               </div>
               <div class='paper-authors'>
-                Jonathan Krause, <u>Justin Johnson</u>, Ranjay Krishna, Li Fei-Fei
+                JJiali Duan, Shengcai Liao, <u>Xiaoyuan Guo</u>, Stan Z Li
               </div>
               <div>
-                CVPR 2017 (Spotlight)
+                ACCV Workshop 2016 (Oral)
               </div>
               <div>
-                <a href='http://cs.stanford.edu/people/ranjaykrishna/im2p/index.html'>[project]</a>
-                <a href='https://arxiv.org/abs/1611.06607'>[arXiv]</a>
-                <a href='http://visualgenome.org/static/data/dataset/paragraphs_v1.json.zip'>[dataset]</a>
-                <a href='https://www.youtube.com/watch?v=G_hWOGH0a0w'>[video]</a>
+                <a href='https://davidsonic.github.io/index/accv_2016.html'>[project]</a>
+                <a href='https://davidsonic.github.io/index/accv/accv2016finalpaper.pdf'>[pdf]</a>
+                <!-- <a href='http://visualgenome.org/static/data/dataset/paragraphs_v1.json.zip'>[dataset]</a> -->
+                <a href='https://davidsonic.github.io/index/accv/WFI-ACCV2016.pptx'>[pptx]</a>
               </div>
             </div>
           </div>
 
-          <div class='row vspace-top'>
+    <!--       <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src='papers/eccv16/31_muse_mine.png'>
             </div>
@@ -297,8 +302,8 @@
                 <a href='papers/eccv16/JohnsonECCV16Supplementary.pdf'>[supplementary]</a>
               </div>
             </div>
-          </div>
-
+          </div> -->
+<!-- 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src='papers/visual-genome/vg-logo.png'>
@@ -322,9 +327,9 @@
                 <a href='http://arxiv.org/abs/1602.07332'>[arXiv]</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class='row vspace-top'>
+        <!--   <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src='papers/densecap/SimpleSystem.svg'>
             </div>
@@ -350,9 +355,9 @@
                 <a href='https://www.youtube.com/watch?v=2wRnmRSrgCo'>[video]</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class='row vspace-top'>
+      <!--     <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src='papers/understanding-rnns/onion.png'>
             </div>
@@ -373,9 +378,9 @@
                 <a href='http://arxiv.org/abs/1506.02078'>[arXiv]</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class='row vspace-top'>
+        <!--   <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src='papers/iccv15/GraphNeighborhoodSmall.svg'>
             </div>
@@ -397,8 +402,8 @@
                 <a href='http://arxiv.org/abs/1508.07647'>[arXiv]</a>
               </div>
             </div>
-          </div>
-
+          </div> -->
+<!-- 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
               <img class='paper-image' src="papers/cvpr2015/scene_graph_282.png">
@@ -422,31 +427,25 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
         <div class='row vspace-top'>
-          <h1>Side Projects</h1>
-          <a href='https://github.com/jcjohnson/neural-style' target='_blank'>
-            <h2>neural-style</h2>
+          <h1><font color="black">Other Projects </font></h1>
+          <a href='https://github.com/XiaoyuanGuo/LungNodule' target='_blank'>
+            <h2>Lung Nodule Detection</h2>
           </a>
-          A Torch implementation of the neural style transfer algorithm from the paper
-          <a href="http://arxiv.org/abs/1508.06576">"A Neural Algorithm of Artistic Style"</a>
-          by Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge.
-          <a href='http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html'>
-            Inceptionism</a>.
-          <a href='https://github.com/jcjohnson/torch-rnn' target='_blank'>
-            <h2>torch-rnn</h2>
+          Developing a Pytorch-based neural network to locate nodules in input 3D image CT volumes. Results will be seen soon!
+          
+         <!--  <a href='http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html'>
+            Inceptionism</a>. -->
+          <a href='https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection/submit' target='_blank'>
+            <h2>Hemorrhage Classification</h2>
           </a>
-          Train character-level language models in torch, and sample from them to generate text.
-          The language model is implemented with efficient, reusable RNN and LSTM modules.
-          <a href='https://github.com/jcjohnson/simple-amt' target='_blank'>
-            <h2>simple-amt</h2>
-          </a>
-          A micro-framework that makes it easy to create and launch
-          tasks on Amazon's Mechanical Turk.
+          Train a classifer to identify acute intracranial hemorrhage and its subtypes. Project is still ongoing.
           <a href='https://github.com/jcjohnson/cnn-benchmarks' target='_blank'>
-            <h2>cnn-benchmarks</h2>
+            <h2>Fibrosis Detection</h2>
           </a>
-          Benchmarks for popular convolutional neural network models on different GPUs.
+          Detect fibrosis area from the input tiff images. 
         </div>
         <div class='row vspace-top'></div>
       </div>
