@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaoyuan Guo | Academic Profile</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f8f9fa;
+            --text-main: #4F6071;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Modernized Header */
+        #header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_1238.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-me {
+            border: 4px solid white;
+            width: 160px;
+            height: 160px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        .header-text-name {
+            font-weight: 700;
+            font-size: 42px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header-text-email {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            padding: 5px 12px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 20px;
+            transition: all 0.3s;
+            text-decoration: none;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .social-links a:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Content Sections */
+        h1 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .publication-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .paper-image {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .paper-title {
+            font-weight: 700;
+            font-size: 18px;
+            color: #222;
+            display: block;
+        }
+
+        .paper-authors {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .paper-venue {
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .btn-link-custom {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 14px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .project-section h3 {
+            color: var(--accent-color);
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .paper-image { margin-bottom: 15px; }
+            .header-text-name { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container header-content">
+            <img src="images/xiaoyuanguo.jpeg" class="img-circle img-me" alt="Xiaoyuan Guo">
+            <div class="header-text-name">Xiaoyuan Guo</div>
+            <div class="header-text-email">xiaoyuan.guo [at] emory.edu</div>
+            <div class="social-links">
+                <a href="https://github.com/XiaoyuanGuo">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=BODfAFkAAAAJ">Scholar</a>
+                <a href="your-link-here">Resume</a>
+                <a href="https://www.linkedin.com/in/xiaoyuan-guo-029252142/">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                
+                <section>
+                    <h1>About</h1>
+                    <p>
+                        I am currently a <strong>Software Engineer at Mineral.ai (an Alphabet company)</strong>, 
+                        where I conduct R&D in zero/few-shot object detection, multi-modality learning, and foundation models. 
+                        I obtained my PhD from <strong>Emory University</strong>.
+                    </p>
+                    <p>
+                        My expertise lies at the intersection of <strong>Computer Vision</strong> and <strong>Medical Image Processing</strong>. 
+                        My previous work involved deep learning for medical analysis with collaborators at Emory and Georgia State University.
+                    </p>
+                </section>
+
+                <section>
+                    <h1>Publications</h1>
+                    
+                    <div class="row publication-card">
+                        <div class="col-sm-3 text-center">
+                            <img class="paper-image" src="images/cluster.png" alt="Paper thumb">
+                        </div>
+                        <div class="col-sm-9">
+                            <span class="paper-title">MedShift: identifying shift data for medical dataset curation</span>
+                            <div class="paper-authors"><u>Xiaoyuan Guo</u>, Judy Wawira Gichoya, Hari Trivedi, Saptarshi Purkayastha, Imon Banerjee.</div>
+                            <div class="paper-venue">IEEE JBHI 2023</div>
+                            <a href="https://arxiv.org/abs/2108.00117" class="btn-link-custom">[Paper]</a>
+                            <a href="https://github.com/XiaoyuanGuo/MedShift" class="btn-link-custom">[Code]</a>
+                        </div>
+                    </div>
+
+                    <div class="row publication-card">
+                        <div class="col-sm-3 text-center">
+                            <img class="paper-image" src="images/icpr-framework-sym.png" alt="Paper thumb">
+                        </div>
+                        <div class="col-sm-9">
+                            <span class="paper-title">Augmenting Vision Language Pretraining by Learning Codebook with Visual Semantics</span>
+                            <div class="paper-authors"><u>Xiaoyuan Guo</u>, Jiali Duan, C.-C. Jay Kuo, Judy Wawira Gichoya, Imon Banerjee.</div>
+                            <div class="paper-venue">ICPR 2022</div>
+                            <a href="#" class="btn-link-custom">[Paper]</a>
+                        </div>
+                    </div>
+
+                    </section>
+
+                <section class="project-section">
+                    <h1>Other Projects</h1>
+                    <h3>Lung Nodule Detection</h3>
+                    <p>Developing a PyTorch-based neural network to locate nodules in input 3D image CT volumes.</p>
+
+                    <h3>Large Graph Analysis</h3>
+                    <p>Parallel algorithms (OpenMP/MPI/Spark) for finding and counting triangles/quadrilaterals in large-scale graphs.</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Xiaoyuan Guo. Built with passion for Computer Vision.
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
